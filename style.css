@@ -1,0 +1,137 @@
+:root {
+  --pink: #C23564;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-weight: 600;
+}
+
+h1 {
+  color: var(--pink);
+}
+
+h6 {
+    font-weight: 400;
+}
+
+.heading{
+    font-size: 64px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 32px 0;
+}
+
+.min-tag, 
+.max-tag {
+    color: var(--pink); 
+    font-size: 20px;
+    margin: 16px;
+}
+
+input[type="number"] {
+    padding: 4px;
+}
+
+.btn {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--pink);
+    transition: all 0.3s ease-in-out;
+}
+
+.result-tag p{
+    font-size: 20px;
+    margin-right: 160px;
+}
+
+#result {
+    display: block;
+    margin: 16px auto;
+    background-color: #ccccff;
+    width: 240px;
+    height: 120px;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.footer {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+a:hover {
+    color: #d40000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Loading Heart */
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+  }
+  .lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
